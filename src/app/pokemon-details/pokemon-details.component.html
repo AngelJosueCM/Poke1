@@ -1,0 +1,16 @@
+<mat-card class="card" style="width: 18rem;">
+    <mat-card-header>
+        {{details.name | uppercase}} 
+        <br>
+        Type:
+        {{details.types[0].type.name}}
+    </mat-card-header>
+    <mat-card-content><p>Shiny Verion</p></mat-card-content>
+    <img mat-card-image [src]="details.sprites.front_shiny" alt="{{details.name}} image">
+    <mat-card-content>
+        <p>Abilities:</p> 
+        {{details.abilities[0].ability.name}}
+    </mat-card-content>
+    <button mat-raised-button routerLink="/home">Back</button>
+</mat-card>
+
