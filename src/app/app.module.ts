@@ -19,6 +19,7 @@ import { PokemonDetailsComponent } from './pokemon-details/pokemon-details.compo
 import { PokeCardComponent } from './components/poke-card/poke-card.component';
 import { UpperCaseCustomPipe } from './pipes/upper-case-custom.pipe';
 import { CustomErrorComponent } from './custom-error/custom-error.component';
+import { RickandmortyComponent } from './rickandmorty/rickandmorty.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { CustomErrorComponent } from './custom-error/custom-error.component';
     PokemonDetailsComponent,
     PokeCardComponent,
     UpperCaseCustomPipe,
-    CustomErrorComponent
+    CustomErrorComponent,
+    RickandmortyComponent
   ],
   imports: [
     BrowserModule,

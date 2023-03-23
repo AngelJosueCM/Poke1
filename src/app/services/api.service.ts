@@ -16,6 +16,8 @@ export class ApiService {
       'Accept': '*/*'
     })
   }
+  rickandmortyURL = 'https://rickandmortyapi.com/api/character/1,183'
+
 
   constructor(private http: HttpClient) { }
 
@@ -30,6 +32,10 @@ export class ApiService {
     return this.http.get<PokemonDetails>(`${this.pokeURL}pokemon/${name}`, this.httpOptions).pipe(
       map((data: any) => data), retry(1)
     )
+  }
+
+  public getData(): Observable<any>{
+    return this.http.get<any>(this.rickandmortyURL);
   }
 
 }

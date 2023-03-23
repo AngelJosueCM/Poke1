@@ -1,0 +1,19 @@
+<body style="background-image: url(https://images3.alphacoders.com/812/thumbbig-812062.webp);">
+<h1>Rick And Morty API</h1>
+<div *ngFor="let item of data">
+<mat-card class="card" style="width: 18rem;">
+    <mat-card-header>
+        {{item.name}} 
+        <br>
+        Species:
+        {{item.species}}
+    </mat-card-header>
+    <img mat-card-image [src]="item.image" alt="{{item.name}} image">
+    <mat-card-content>
+        status:
+        {{item.status}}
+    </mat-card-content>
+    <button mat-raised-button routerLink="/home">Back</button>
+</mat-card>
+</div>
+</body>

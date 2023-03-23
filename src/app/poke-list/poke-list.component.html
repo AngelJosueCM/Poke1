@@ -7,10 +7,12 @@
                     (keyup)="filterPokemons(findPokemon.value)">
                 <mat-icon matSuffix>search</mat-icon>
             </mat-form-field>
+            <button mat-raised-button routerLink="/R&M">RickAndMortyAPI</button>
+            <button mat-raised-button routerLink="/Error">Boton de Error xd</button>
         </form>
     </div>
 </div>
-<div style="background-color: gray;">
+<div style="background-image: url(https://p4.wallpaperbetter.com/wallpaper/121/449/307/pokemon-cartoon-minimalist-pokeball-wallpaper-preview.jpg);">
     <div *ngFor="let pokemon of pokemonsFiltered" style="margin-bottom: 10px; max-width: 250px;" >
         <app-poke-card [pokemon]="pokemon"></app-poke-card>
     </div>
